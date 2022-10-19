@@ -1,0 +1,254 @@
+:root {
+  --white: #f3f3f3;
+  --background: #080c1f;
+  --grey: #a5a6b3;
+}
+
+/* Reset CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  margin: 0;
+  color: var(--grey);
+}
+
+/* Main */
+
+html,
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #080c1f;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo-circle {
+  display: inline-block;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  background-color: #3fe7e2;
+  margin-right: 1.2rem;
+  position: relative;
+}
+
+.logo-circle::after {
+  content: '';
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  border: 2px solid #3fe7e2;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  mix-blend-mode: difference;
+}
+
+.hero {
+  max-width: 480px;
+  width: 80%;
+  text-align: center;
+  margin: 5% auto;
+}
+
+.box1,
+.box2 {
+  text-align: left;
+  text-decoration-style: solid;
+  margin: 20px;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 20%;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+.rounded-img {
+  width: 130px;
+  border: solid #093e65;
+  background-color: #093e65;
+  border-radius: 35%;
+  margin-bottom: 30px;
+}
+
+.box1 {
+  margin-top: -10%;
+}
+
+.section p {
+  margin-top: 20px;
+}
+
+.section-title {
+  display: block;
+  text-align: center;
+  max-width: 600px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 15%;
+}
+.section-title h1 {
+  margin-bottom: 15px;
+}
+
+.pricing-section {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.pricing-card {
+  border: solid #090c22 3px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 80%;
+  background-color: #0b3f69;
+  padding: 30px;
+  text-align: left;
+  margin-top: 8%;
+  display: block;
+  justify-content: space-between;
+}
+.pricing-card2 {
+  border: solid #090c22 3px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 80%;
+  background-color: #3ee7e5;
+  padding: 30px;
+  text-align: left;
+  margin-top: 7%;
+  margin-left: 2%;
+  display: block;
+  justify-content: space-between;
+}
+
+.pricing-card-title {
+  color: white;
+  margin-top: -15px;
+  margin-bottom: 15px;
+}
+
+.pricing-card-title2 {
+  color: black;
+  margin-top: -15px;
+  margin-bottom: 15px;
+}
+
+.price2 {
+  color: black;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+}
+
+li::before {
+  content: '';
+  display: inline-block;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  background-image: url(https://cdn.icon-icons.com/icons2/1880/PNG/512/iconfinder-check-4341282_120572.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-right: 10px;
+}
+li {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer-h2 {
+  text-align: center;
+}
+
+.form {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.form-input {
+  width: 230px;
+  height: 40px;
+  border-radius: 40px;
+  border: solid #080c1f 3px;
+  background-color: #0b3f69;
+  color: #3ae9e7;
+  font-weight: bolder;
+}
+
+.form-btn {
+  width: 100px;
+  height: 40px;
+  border: solid #080c1f 3px;
+  border-radius: 40px;
+  background-color: #3ae9e7;
+  font-weight: bold;
+}
+
+.loveblue {
+  color: cyan;
+}
+
+@media (max-width: 1200px) {
+  .section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+  .box1 {
+    margin-top: 0;
+  }
+}
